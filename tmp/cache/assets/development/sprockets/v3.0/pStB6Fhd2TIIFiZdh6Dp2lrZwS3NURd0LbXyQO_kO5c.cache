@@ -1,13 +1,0 @@
-I"(function() {
-  $(document).ready(function() {
-    $(window).scroll(function() {
-      if ($(this).scrollTop() < 100) {
-        $('.navbar-inverse').addClass('navbar-large');
-      } else {
-        $('.navbar-inverse').removeClass('navbar-large');
-      }
-    });
-  });
-
-}).call(this);
-:ET
