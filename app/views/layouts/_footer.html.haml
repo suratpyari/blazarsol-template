@@ -1,0 +1,95 @@
+.footer.container-fluid.footer-toggle.shrink
+  .main.row
+    .col-md-2.col-sm-12.text-center
+      %ul
+        %li
+          BRAND
+
+
+    .col-md-2.col-sm-6.visible-md.visible-lg
+      %ul
+        -colm1.each do |key,value|
+          %li
+            =link_to key.to_s , value
+
+    .col-md-4.col-sm-6.visible-md.visible-lg
+      %ul
+        -colm2.each do |key,value|
+          %li
+            =link_to key.to_s , value
+
+
+
+
+    .list-group.visible-xs.visible-sm.hidden-md.hidden-lg
+      -colm1.each do |key,value|
+        .list-group-item.footer-xs
+          =link_to key.to_s , value
+
+
+      -colm2.each do |key,value|
+        .list-group-item.footer-xs
+          =link_to key.to_s , value
+
+    .col-md-2.contacts.visible-xs.visible-sm.visible-md.visible-lg.text-center-xs.text-center-sm
+      %h4
+        Contact Us
+      %ul
+        %li
+          %span.glyphicon.glyphicon-envelope{"aria-hidden" => "true"}
+          = link_to "info.svllp@gmail.com", "mailto:info.svllp@gmail.com"
+        %br.hidden-lg.hidden-md
+        %li
+          %span.glyphicon.glyphicon-phone{"aria-hidden" => "true"}
+          = link_to "+91 98 76 543128", "tel:+919876543128"
+
+
+      %h3.text-center-xs.text-center-sm.hidden-sm.hidden-xs
+        %a{:href => "https://www.facebook.com/gametumor", :target => "_new"}
+          %i.fa.fa-facebook-square
+
+        %a{:href => "https://www.pinterest.com/gametumor/", :target => "_new"}
+          %i.fa.fa-pinterest-square
+
+        %a{:href => "https://www.youtube.com/channel/UCkkThUCi3i4qm4RHCoQoBIA", :target => "_new"}
+          %i.fa.fa-youtube-square
+
+        %a{:href => ""}
+          %i.fa.fa-google-plus-square
+
+        %a{:href => ""}
+          %i.fa.fa-twitter-square
+
+
+
+
+      %h3.text-center-xs.text-center-sm.increase_size.hidden-lg.hidden-md
+        %a{:href => "https://www.facebook.com/gametumor", :target => "_new"}
+          %i.fa.fa-facebook-square
+
+        %a{:href => "https://www.pinterest.com/gametumor/", :target => "_new"}
+          %i.fa.fa-pinterest-square
+
+        %a{:href => "https://www.youtube.com/channel/UCkkThUCi3i4qm4RHCoQoBIA", :target => "_new"}
+          %i.fa.fa-youtube-square
+
+        %a{:href => ""}
+          %i.fa.fa-google-plus-square
+
+        %a{:href => ""}
+          %i.fa.fa-twitter-square
+.footer.container-fluid
+  .strip.clear
+    .container-fluid
+      .row
+        .col-sm-12.col-md-1.text-center
+          .menu
+            = link_to "Menu", "#"
+        .col-sm-12.col-md-6.text-center
+          Copyright 2015 Blazar Software Solutions All rights reserved.
+        .col-sm-12.col-md-5.text-center
+          Handcrafted by
+          = link_to "Blazar Software Solutions", "http://blazarsol.com"
+.go-top
+  %span.glyphicon.glyphicon-chevron-up{"aria-hidden" => "true"}
+

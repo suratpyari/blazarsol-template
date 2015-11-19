@@ -1,0 +1,21 @@
+%title= yield(:title)
+= favicon_link_tag "Logo.png"
+- if content_for?(:head)
+  = yield(:head)
+= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+= javascript_include_tag 'application', 'data-turbolinks-track' => true
+= csrf_meta_tags
+%meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+%meta{:content => "gametumor,bonsai", :name => "keywords"}
+%meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+
+%body.common
+  = render "/layouts/header"
+
+
+  = yield :top
+  = yield
+  - unless (params[:controller] == "products" && params[:action] == 'index')
+    %hr
+
+  = render "/layouts/footer"

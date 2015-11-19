@@ -1,0 +1,22 @@
+I"Å(function() {
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 85 && $(this).scrollTop() < 100) {
+        $('.navbar-inverse.navbar-large').css('top', '-100px');
+      } else {
+        $('.navbar-inverse.navbar-large').css('top', '0px');
+      }
+      if ($(this).scrollTop() < 100) {
+        $('.navbar-inverse').addClass('navbar-large');
+        $('.navbar-inverse').removeClass('navbar-fixed-top');
+        $('body').css('margin-top', '0');
+      } else {
+        $('.navbar-inverse').removeClass('navbar-large');
+        $('.navbar-inverse').addClass('navbar-fixed-top');
+        $('body').css('margin-top', '50px');
+      }
+    });
+  });
+
+}).call(this);
+:ET

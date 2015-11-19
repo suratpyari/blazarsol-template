@@ -1,0 +1,15 @@
+I"–(function() {
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(this).scrollTop() < 45) {
+        $('.navbar-inverse').addClass('navbar-large');
+        $('.navbar-inverse').removeClass('navbar-fixed-top');
+      } else {
+        $('.navbar-inverse').removeClass('navbar-large');
+        $('.navbar-inverse').addClass('navbar-fixed-top');
+      }
+    });
+  });
+
+}).call(this);
+:ET

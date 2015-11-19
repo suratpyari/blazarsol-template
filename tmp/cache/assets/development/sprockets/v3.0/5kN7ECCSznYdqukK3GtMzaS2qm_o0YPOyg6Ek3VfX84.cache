@@ -1,0 +1,24 @@
+I"û(function() {
+  $(document).ready(function() {
+    $('.menu').click(function() {
+      return $('.footer').toggleClass('shrink');
+    });
+    $('.go-top').click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 'slow');
+    });
+    if ($(window).scrollTop() < 45) {
+      $('.go-top').hide();
+    }
+    $(window).scroll(function() {
+      if ($(this).scrollTop() < 45) {
+        $('.go-top').hide();
+      } else {
+        $('.go-top').show();
+      }
+    });
+  });
+
+}).call(this);
+:ET

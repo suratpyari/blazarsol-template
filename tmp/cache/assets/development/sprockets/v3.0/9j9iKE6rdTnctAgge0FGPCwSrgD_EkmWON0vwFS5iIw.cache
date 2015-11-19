@@ -1,0 +1,17 @@
+I"þ(function() {
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(this).scrollTop() < 100) {
+        $('.navbar-inverse').addClass('navbar-large');
+        $('.navbar-inverse').removeClass('navbar-fixed-top');
+      } else {
+        $('.navbar-inverse').removeClass('navbar-large');
+        $('.navbar-inverse').addClass('slideIn');
+        $('.navbar-inverse').addClass('navbar-fixed-top');
+        $('.navbar-inverse').removeClass('slideIn');
+      }
+    });
+  });
+
+}).call(this);
+:ET
