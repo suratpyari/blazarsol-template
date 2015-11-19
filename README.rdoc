@@ -1,11 +1,11 @@
 == README
 
-Icludes:
+== Includes:
 
-bootstrap
-Sweet alert
-sweet alert script for rails destroy object
-shrinking header
-toggled footer
-go to top
+* bootstrap
+* Sweet alert
+* sweet alert script for rails destroy object
+* shrinking header
+* toggled footer
+* go to top
 
