@@ -1,4 +1,5 @@
 .footer {
+  z-index: 100;
   display: block;
   position: fixed;
   bottom: 0;
@@ -14,6 +15,8 @@
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+  max-height: 500px;
+  overflow: auto;
   &.shrink{
     bottom: -200px;
   }
@@ -55,6 +58,34 @@
   }
 
 }
+@media (max-width: 992px) {
+  .footer{
+    &.shrink{
+      bottom: -1000px;
+    }
+  }
+}
+@media (max-width: 971px) {
+  .footer{
+    &.footer-toggle{
+      padding-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 539px) {
+  .footer{
+    &.footer-toggle{
+      padding-bottom: 40px;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .footer{
+    &.footer-toggle{
+      padding-bottom: 50px;
+    }
+  }
+}
 
 .go-top {
   cursor: pointer;
@@ -73,6 +104,7 @@
   bottom: 10px;
   right: 10px;
   padding-left:3px;
+  z-index: 101;
   span {
     color: #000;
   }

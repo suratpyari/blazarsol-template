@@ -1,6 +1,3 @@
-body{
-  margin-top: 100px;
-}
 .text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
   text-align: left;
 }
@@ -157,6 +154,7 @@ body{
   }
   &.navbar-large{
     min-height: 81px;
+    opacity: 0.6;
     img{
       height: 70px
     }
